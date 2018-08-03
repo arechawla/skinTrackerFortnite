@@ -1,4 +1,23 @@
 from selenium import webdriver
+import smtplib    
+
+
+emailAddress = "webscraperfortnite@gmail.com"
+password = ""
+
+def sendEmail(subject, msg):
+    try:
+        server = smtplib.SMTP('smtp.gmail.com:587')
+        server.ehlo()
+        server.starttls()
+        server.login(emailAddress, password)
+        message = 'Subject: {}\n\n{}'.format(subject, msg)
+        server.sendmail(emailAddress, emailAddress, message)
+        server.quit()
+        print("Success: Email sent!")
+    except:
+        print("Email failed to send.")
+
 
 #Opens chrome and goes to website
 driver = webdriver.Chrome()   
@@ -10,5 +29,12 @@ itemName = driver.find_elements_by_xpath('//h3')
 
 numItems = len(itemName)
 
+desired = "MAVERICK"
+subjectGood = "Skin Available"
+msgGood = "Congrats! " + desired + " is available today!"
+
 for i in range(numItems):
-    print(itemName[i].text)
+    if itemName[i].text == desired:
+        print("Congrats! " + desired + " is available today!")
+        sendEmail(subjectGood, msgGood)
+

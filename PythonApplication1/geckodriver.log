@@ -1046,3 +1046,15 @@ IPDL protocol error: Handler returned error code!
 [GPU 15172, C
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1533269089913	geckodriver	INFO	geckodriver 0.21.0
+1533269089924	geckodriver	INFO	Listening on 127.0.0.1:55179
+1533269092979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Rahul\\AppData\\Local\\Temp\\rust_mozprofile.SdPbofDJBuJJ"
+Unable to read VR Path Registry from C:\Users\Rahul\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Rahul\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Rahul\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Rahul\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\Rahul\AppData\Local\openvr\openvrpaths.vrpath
+1533269094950	Marionette	INFO	Listening on port 55191
+1533269095131	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-43800132-1, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-43800132-1, line 69: unreachable code after return statement
